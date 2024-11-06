@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroPaws</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <header id="main-header" class="main-header">
+        <div class="logo-container">
+            <a href="/index.html">
+                <img src="/img/logo.jpeg" alt="">
+            </a>
+        </div>
+        <div>
+            <h1 class="neuro-heading">NeuroPaws
+                <a href="product.html" target="_blank" class="icon-link">
+                <i class='fas fa-paw' style='font-size:24px'></i>
+                </a> 
+            </h1>
+            <p class="tagline">Connect Communicate Collaborate</p>
+        </div>
+        <div class="menu">
+            <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+             <a href="#"> <img src="./img/burgerMenuIcon.webp" alt=""></a>
+        </div>
+    </header>
+    <div class="content-container">
+        <section class="about">
+            <h2>About NeuroPaws</h2>
+            <p>NeuroPaws is dedicated to enhancing the bond between pets and their owners by providing insights into pets' emotional and mental well-being. Our wearable technology measures stress, cognitive function, and more to help you understand your pet's state of mind.</p>
+        </section>
+    
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Stress Monitoring</h3>
+                    <p>Track your pet's stress levels and get real-time insights into their emotional state.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Cognitive Insights</h3>
+                    <p>Analyze your pet's cognitive function and behavior patterns to keep them mentally healthy.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sync"></i>
+                    <h3>Bluetooth Connectivity</h3>
+                    <p>Sync data seamlessly to your mobile device and access insights anytime, anywhere.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="benefits">
+            <h2>Why Choose NeuroPaws?</h2>
+            <ul>
+                <li>Strengthen the bond with your pet by understanding their emotions.</li>
+                <li>Get valuable data to support veterinarians in providing better care.</li>
+                <li>Easy-to-use, wearable technology tailored for various pets.</li>
+            </ul>
+        </section>
+        <section>
+            <div class="meadia-container">
+                <img src="/img/logo.jpeg" alt="">
+                <iframe width="966" height="325" src="https://www.youtube.com/embed/Gxxd5ZrUqfE" title="Can we help animals in stress? #MiloCCMB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="blob:https://web.whatsapp.com/83846b16-121e-4763-b6cf-b7178847beb9" alt="">
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>NeuroPaws</h2>
+            <p>Innovating pet care with science and technology</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>Contact us: <a href="mailto:support@neuropaws.com">support@neuropaws.com</a></p>
+            <p>&copy; 2024 NeuroPaws. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    color: white;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+/* .main-header>div{
+
+} */
+
+.menu{
+    /* border: 1px solid red; */
+    /* margin-right: 30px; */
+    /* margin-top: 25px; */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* width: 300px; */
+    /* size: 100px; */
+}
+.menu>a>img{
+    width: 20px;
+    
+}
+.menu>a>img:hover{
+    transition: 3s;
+    width: 30px;
+}
+.fa-bars{
+    border:1px solid red;
+}
+.logo-container>a>img{
+    width: 70px;
+height: 70px;
+border-radius: 50%;
+margin-left: 40px;
+}
+i:hover {
+    color: darkblue;
+    transition: 3s;
+    transform: scale(2);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightblue;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: darkcyan;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease; 
+}
+
+.neuro-heading {
+    font-size: 2.5em;
+    color: #fff;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #c8e6ff;
+    margin-top: 5px;
+    transition: 0.5s ease
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 100px; 
+}
+
+button {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5733;
+}
+.footer {
+    position: relative;
+    background-color: darkcyan  ; /* Dark background for footer */
+    color: #f4f4f9; /* Light text color */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content h2 {
+    font-size: 1.8em;
+    color: #e67e22; /* Matching orange color */
+    margin-bottom: 10px;
+}
+
+.iframe {
+    size: 10px;
+}
+
+.footer-content p {
+    font-size: 1em;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #f4f4f9;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #f1c40f; /* Yellow on hover */
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    color: #e67e22; /* Orange icons for consistency */
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f1c40f; /* Yellow on hover for social icons */
+    transform: scale(1.2);
+}
+.content-container {
+    padding: 80px 20px; /* Provides padding to avoid overlap with fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #4a90e2; /* Accent color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features .feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 250px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px); /* Hover effect for feature boxes */
+}
+
+.feature-item i {
+    font-size: 2em;
+    color: #e67e22; /* Icon color matching theme */
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.benefits li::before {
+    content: "\2022"; /* Bullet point */
+    color: #e67e22;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+}
+.meadia-container{
+    display: flex;
+    gap: 3rem;
+
+}
+.meadia-container >img{
+    height: 320px;
+}
+</style>

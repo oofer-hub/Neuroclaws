@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroPaws Premium Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main Layout */
+        body {
+            background-color: #f5f8fc;
+            color: #333;
+        }
+
+        /* Header with Video Background */
+        .header-video-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            text-align: center;
+            color: white;
+        }
+
+        .header-video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .header-title {
+            position: relative;
+            z-index: 1;
+            padding: 120px 20px 20px;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .features-section, .purchase-section {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .features-section h2, .purchase-section h2 {
+            font-size: 2.5rem;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        .features-section p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-item h3 {
+            font-size: 1.7rem;
+            color: #e91e63;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            color: #666;
+        }
+
+        .purchase-section {
+            background-color: #fce4ec;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .purchase-section button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #e91e63;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .purchase-section button:hover {
+            background-color: #c2185b;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #e91e63;
+            color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .buy-premium{
+            margin-top: 20px;
+        }
+
+        .footer-content p, .footer-content a {
+            color: #f4f4f9;
+        }
+
+        .social-icons {
+            margin: 15px 0;
+        }
+
+        .social-icons a {
+            color: #ffab91;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff6f61;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Background Video -->
+    <div class="header-video-container">
+        <video autoplay muted loop>
+            <source src="path-to-your-premium-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <h1 class="header-title">NeuroPaws Premium Product</h1>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Product Features -->
+        <section class="features-section">
+            <h2>Premium Features</h2>
+            <p>NeuroPaws Premium offers cutting-edge technology for comprehensive insights into your pet's health, emotions, and overall well-being, tailored for pet enthusiasts looking to deepen their bond.</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Advanced Emotional Insights</h3>
+                    <p>Analyze intricate emotional data, providing a complete overview of your pet's mental state.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Personalized Health Reports</h3>
+                    <p>Receive health reports personalized to your pet, helping you make informed decisions.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Long Battery Life</h3>
+                    <p>Our premium product offers extended battery life, ensuring you stay connected longer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Purchase Section -->
+        <section class="purchase-section">
+            <h2>Purchase the Premium Product</h2>
+            <p>Unlock the full potential of NeuroPaws with our premium offering, designed for the devoted pet parent.</p>
+            <button class="buy-premium">Buy Premium</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>NeuroPaws</h2>
+            <p>Innovating pet care with science and technology.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>Contact us: <a href="mailto:support@neuropaws.com">support@neuropaws.com</a></p>
+            <p>&copy; 2024 NeuroPaws. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
